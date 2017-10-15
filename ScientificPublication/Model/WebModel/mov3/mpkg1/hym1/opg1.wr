@@ -1,0 +1,24 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov3#mpkg1#hym1#opg1" name="Save Comment" transaction="true" gr:x="130" gr:y="170">
+  <OperationUnits>
+    <TimeUnit id="mov3#mpkg1#hym1#opg1#tmu1" name="Today Time" gr:x="0" gr:y="5">
+      <OKLink id="mov3#mpkg1#hym1#opg1#tmu1#oln23" name="OKLink84" to="mov3#mpkg1#hym1#opg1#cru2">
+        <LinkParameter id="mov3#mpkg1#hym1#opg1#tmu1#oln23#par281" name="Current/Input Timestamp_Timestamp" source="currentTimestamp" target="mov3#mpkg1#hym1#opg1#cru2.ent8#att35"/>
+        <LinkParameter id="mov3#mpkg1#hym1#opg1#tmu1#oln23#par282" name="Current/Input Date_PASSING" source="currentDate" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym1#opg1#tmu1#oln23#par283" name="Current/Input Time_PASSING" source="currentTime" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym1#opg1#tmu1#oln23#par284" name="Current/Input Timestamp_PASSING" source="currentTimestamp" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym1#opg1#tmu1#oln23#par285" name="Day_PASSING" source="day" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym1#opg1#tmu1#oln23#par286" name="Hour_PASSING" source="hour" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym1#opg1#tmu1#oln23#par287" name="Minutes_PASSING" source="min" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym1#opg1#tmu1#oln23#par288" name="Month_PASSING" source="month" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym1#opg1#tmu1#oln23#par289" name="Next Midnight Timestamp_PASSING" source="nextMidnightTimestamp" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym1#opg1#tmu1#oln23#par290" name="Seconds_PASSING" source="sec" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym1#opg1#tmu1#oln23#par291" name="Time in Milliseconds_PASSING" source="timeInMillis" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym1#opg1#tmu1#oln23#par292" name="Year_PASSING" source="year" passing="true"/>
+      </OKLink>
+    </TimeUnit>
+    <CreateUnit id="mov3#mpkg1#hym1#opg1#cru2" name="Create Comment" gr:x="195" gr:y="0" entity="ent8">
+      <OKLink id="mov3#mpkg1#hym1#opg1#cru2#oln24" name="OKLink85" to="mov3#mpkg1#hym1#okcu3"/>
+    </CreateUnit>
+  </OperationUnits>
+  <KOLink id="mov3#mpkg1#hym1#opg1#kln9" name="KOLink25" to="mov3#mpkg1#hym1#kocu4" automaticCoupling="true"/>
+</OperationGroup>

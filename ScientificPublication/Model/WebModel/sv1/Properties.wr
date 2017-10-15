@@ -1,0 +1,17 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Public" homePage="sv1#page2">
+  <OperationUnits>
+    <ModuleInstanceUnit id="sv1#miu2" gr:x="630" gr:y="85" action="true" moduleId="mov2#opm1">
+      <OKLink id="sv1#miu2#oln1" name="OKFlow3" to="sv1#page4#dau1">
+        <LinkParameter id="sv1#miu2#oln1#par1" name="oid_KeyCondition3 [oid]" source="mov2#opm1#okcu2#ocp2" target="sv1#page4#dau1#su1#kcond1.userOID"/>
+      </OKLink>
+      <KOLink id="sv1#miu2#kln7" name="KOFlow7" to="sv1#page5#mssu3" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit id="sv1#miu3" gr:x="90" gr:y="270" action="true" moduleId="mov1#opm3" secure="false" protected="false">
+      <KOLink id="sv1#miu3#kln6" name="KOFlow6" to="sv1#page5#mssu3" automaticCoupling="true" gr:bendpoints="1,80,-559,80;253,80,-307,80;561,79,1,79"/>
+      <OKLink id="sv1#miu3#oln9" name="OKFlow9" to="sv1#page6#dau4">
+        <LinkParameter id="sv1#miu3#oln9#par12" name="username_KeyCondition3 [oid]" target="sv1#page6#dau4#su4#kcond4.userOID" sourceLinkParameter="sv1#page2#enu3#ln1#par4"/>
+      </OKLink>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="330" gr:y="265" id="sv1#miu4" action="true" name="logout" moduleId="mov1#opm4" landmark="false"/>
+  </OperationUnits>
+</SiteView>

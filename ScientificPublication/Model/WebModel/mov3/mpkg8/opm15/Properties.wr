@@ -1,0 +1,20 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov3#mpkg8#opm15" name="Send EMail" gr:icon="ModulesIcons/EMail.png" gr:x="0" gr:y="0">
+  <OperationUnits>
+    <InputCollectorUnit id="mov3#mpkg8#opm15#icu44" gr:x="70" gr:y="-45">
+      <InputCollectorParameter id="mov3#mpkg8#opm15#icu44#icp86" name="Publication Key"/>
+      <InputCollectorParameter id="mov3#mpkg8#opm15#icu44#icp87" name="Operation"/>
+      <Link id="mov3#mpkg8#opm15#icu44#ln311" name="Link128" to="mov3#mpkg8#opm15#opg35#seu35" type="transport" validate="true">
+        <LinkParameter id="mov3#mpkg8#opm15#icu44#ln311#par908" name="Appointment Key" source="mov3#mpkg8#opm15#icu44#icp86" target="mov3#mpkg8#opm15#opg35#seu35#su146#kcond107.ent1#att1"/>
+      </Link>
+      <OKLink id="mov3#mpkg8#opm15#icu44#oln235" name="OKLink36" to="mov3#mpkg8#opm15#opg35#seu36">
+        <LinkParameter id="mov3#mpkg8#opm15#icu44#oln235#par909" name="Appointment Key" source="mov3#mpkg8#opm15#icu44#icp86" target="mov3#mpkg8#opm15#opg35#seu36#su147#rcond27.ent1#att1"/>
+      </OKLink>
+      <Link id="mov3#mpkg8#opm15#icu44#ln312" name="Link129" to="mov3#mpkg8#opm15#opg35#scu8" type="transport" validate="true">
+        <LinkParameter id="mov3#mpkg8#opm15#icu44#ln312#par910" name="Operation_operation" source="mov3#mpkg8#opm15#icu44#icp87" target="mov3#mpkg8#opm15#opg35#scu8.operation"/>
+      </Link>
+    </InputCollectorUnit>
+    <OKCollectorUnit id="mov3#mpkg8#opm15#okcu41" name="Success" gr:x="760" gr:y="-110"/>
+    <KOCollectorUnit id="mov3#mpkg8#opm15#kocu24" name="Error" gr:x="760" gr:y="5"/>
+  </OperationUnits>
+  <Comment xml:space="preserve">Operation Module that contains the necessary operations to send emails.</Comment>
+</OperationModule>

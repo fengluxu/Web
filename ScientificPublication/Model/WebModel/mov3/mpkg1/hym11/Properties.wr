@@ -1,0 +1,20 @@
+<HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov3#mpkg1#hym11" name="Edit Comment" gr:icon="ModulesIcons/Edit.png" gr:x="220" gr:y="0">
+  <OperationUnits>
+    <DeleteUnit id="mov3#mpkg1#hym11#dlu21" name="Delete Comment" gr:x="250" gr:y="310" entity="ent8">
+      <Selector id="mov3#mpkg1#hym11#dlu21#su85" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov3#mpkg1#hym11#dlu21#su85#kcond62" name="Editorial Review" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov3#mpkg1#hym11#dlu21#oln144" name="OKLink241" to="mov3#mpkg1#hym11#page42" automaticCoupling="true" gr:bendpoints="44,-68,34,112"/>
+    </DeleteUnit>
+    <OKCollectorUnit id="mov3#mpkg1#hym11#okcu20" name="Success" gr:x="805" gr:y="190"/>
+    <KOCollectorUnit id="mov3#mpkg1#hym11#kocu12" name="Error" gr:x="805" gr:y="290"/>
+    <InputCollectorUnit gr:x="0" gr:y="180" id="mov3#mpkg1#hym11#icu25">
+      <InputCollectorParameter id="mov3#mpkg1#hym11#icu25#icp54" name="Pubilcation key"/>
+      <OKLink id="mov3#mpkg1#hym11#icu25#oln150" name="OKFlow150" to="mov3#mpkg1#hym11#page42#pwu19">
+        <LinkParameter id="mov3#mpkg1#hym11#icu25#oln150#par708" name="Pubilcation key_PASSING" source="mov3#mpkg1#hym11#icu25#icp54" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym11#icu25#oln150#par927" name="Pubilcation key_Book [oid]" source="mov3#mpkg1#hym11#icu25#icp54" target="mov3#mpkg1#hym11#page42#pwu19#su86#rcond8.ent1#att1"/>
+      </OKLink>
+    </InputCollectorUnit>
+  </OperationUnits>
+  <Comment xml:space="preserve">Hybrid Module that allows the User to see and add Editorial Reviews to a specific Book.</Comment>
+</HybridModule>

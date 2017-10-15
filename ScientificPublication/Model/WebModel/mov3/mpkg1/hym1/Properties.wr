@@ -1,0 +1,15 @@
+<HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov3#mpkg1#hym1" name="Save Comment" gr:icon="ModulesIcons/Save.png" gr:x="10" gr:y="5">
+  <OperationUnits>
+    <InputCollectorUnit id="mov3#mpkg1#hym1#icu4" gr:x="-140" gr:y="45">
+      <InputCollectorParameter id="mov3#mpkg1#hym1#icu4#icp3" name="Publication Key"/>
+      <OKLink id="mov3#mpkg1#hym1#icu4#oln22" name="OKLink212" to="mov3#mpkg1#hym1#page15#enu10" ajaxOpenWindow="false" ajaxWindowUseTitle="true" ajaxWindowTitle="Add Review" ajaxWindowAutoResizing="true" ajaxWindowClosable="true" ajaxWindowDraggable="true">
+        <LinkParameter id="mov3#mpkg1#hym1#icu4#oln22#par293" name="Key Condition [oid]" source="mov3#mpkg1#hym1#icu4#icp3" target="mov3#mpkg1#hym1#page15#enu10.ent8#att33"/>
+        <LinkParameter id="mov3#mpkg1#hym1#icu4#oln22#par831" name="Publication Key_PASSING" source="mov3#mpkg1#hym1#icu4#icp3" passing="true"/>
+      </OKLink>
+      <InputCollectorParameter id="mov3#mpkg1#hym1#icu4#icp34" name="Key Condition [oid]"/>
+    </InputCollectorUnit>
+    <OKCollectorUnit id="mov3#mpkg1#hym1#okcu3" name="Success" gr:x="580" gr:y="105"/>
+    <KOCollectorUnit id="mov3#mpkg1#hym1#kocu4" name="Error" gr:x="580" gr:y="195"/>
+  </OperationUnits>
+  <Comment xml:space="preserve">Hybrid Module used to store the Reviews related to a specific Book.</Comment>
+</HybridModule>

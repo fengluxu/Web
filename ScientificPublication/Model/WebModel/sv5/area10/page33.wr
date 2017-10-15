@@ -1,0 +1,236 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area10#page33" name="Publication Management" landmark="false" gr:x="370" gr:y="180">
+  <ContentUnits>
+    <PowerIndexUnit id="sv5#area10#page33#pwu15" name="Publication List" linkOrder="sv5#area10#page33#pwu15#ln152 sv5#area10#page33#pwu15#ln150 sv5#area10#page33#pwu15#ln151 sv5#area10#page33#pwu15#ln153" gr:x="0" gr:y="160" sortable="true" checkable="false" useCountQuery="false" entity="ent1" displayAttributes="ent1#att8 ent1#att10 ent1#att2 ent1#att4 ent1#att5 ent1#att6 ent1#att7" blockFactor="10" blockWindow="2">
+      <Selector id="sv5#area10#page33#pwu15#su62" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv5#area10#page33#pwu15#su62#acond29" name="Title" predicate="contains" booleanOperator="or" implied="true" attributes="ent1#att2" ignoreCase="true"/>
+        <AttributesCondition id="sv5#area10#page33#pwu15#su62#acond30" name="year" predicate="contains" booleanOperator="or" implied="true" attributes="ent1#att5" ignoreCase="true"/>
+      </Selector>
+      <Link id="sv5#area10#page33#pwu15#ln150" name="Add Comment" to="sv5#area10#miu27" type="normal" validate="true" newWindow="false" ajaxEnabled="true">
+        <LinkParameter id="sv5#area10#page33#pwu15#ln150#par668" name="oid_Key Condition [oid]" source="data[].ent1#att1" target="sv5#area10#miu27.mov3#mpkg1#hym1#icu4#icp34"/>
+      </Link>
+      <Link id="sv5#area10#page33#pwu15#ln151" name="Edit" to="sv5#area10#page33#enu30" type="normal" validate="true">
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par514" name="Show Edit" targetVariable="sv5#area10#page33#var4" sourceValue="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par515" name="oid_Key Condition [oid]" source="data[].ent1#att1" target="sv5#area10#page33#enu30.ent1#att1"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par516" name="Abstract_PASSING" source="data[].ent1#att6" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par517" name="Block Index_PASSING" source="scroller.current" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par518" name="Data Size_PASSING" source="dataSize" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par519" name="Keywords_PASSING" source="data[].ent1#att7" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par520" name="oid_PASSING" source="data[].ent1#att1" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par521" name="oid (block)_PASSING" source="ent1#att1Array" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par522" name="Pdf_PASSING" source="data[].ent1#att8" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par523" name="Public_PASSING" source="data[].ent1#att10" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par524" name="PublicationToAuthor_2.oid_PASSING" source="data[].rel3#role5_ent2#att9" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par525" name="Title_PASSING" source="data[].ent1#att2" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par526" name="Venue_PASSING" source="data[].ent1#att4" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln151#par527" name="Year_PASSING" source="data[].ent1#att5" passing="true"/>
+      </Link>
+      <Link id="sv5#area10#page33#pwu15#ln152" name="Edit comment" to="sv5#area10#miu26" type="normal" validate="true" ajaxEnabled="true">
+        <LinkParameter id="sv5#area10#page33#pwu15#ln152#par699" name="oid_Pubilcation key" source="data[].ent1#att1" target="sv5#area10#miu26.mov3#mpkg1#hym11#icu25#icp54"/>
+      </Link>
+      <SortAttribute attribute="ent1#att10" order="ascending"/>
+      <SortAttribute attribute="ent1#att2" order="descending"/>
+      <SortAttribute attribute="ent1#att5" order="descending"/>
+      <SortAttribute attribute="ent1#att8" order="ascending"/>
+      <DefaultSortAttribute attribute="ent1#att10" order="ascending"/>
+      <DefaultSortAttribute attribute="ent1#att2" order="ascending"/>
+      <DefaultSortAttribute attribute="ent1#att5" order="ascending"/>
+      <DefaultSortAttribute attribute="ent1#att8" order="ascending"/>
+      <Link id="sv5#area10#page33#pwu15#ln153" name="Delete" to="sv5#area10#dlu13" type="normal" validate="true">
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par540" name="oid_Book [oid]" source="data[].ent1#att1" target="sv5#area10#dlu13#su61#kcond44.ent1#att1"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par541" name="Abstract_PASSING" source="data[].ent1#att6" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par542" name="Block Index_PASSING" source="scroller.current" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par543" name="Data Size_PASSING" source="dataSize" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par544" name="Keywords_PASSING" source="data[].ent1#att7" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par545" name="oid_PASSING" source="data[].ent1#att1" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par546" name="oid (block)_PASSING" source="ent1#att1Array" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par547" name="Pdf_PASSING" source="data[].ent1#att8" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par548" name="Public_PASSING" source="data[].ent1#att10" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par549" name="PublicationToAuthor_2.oid_PASSING" source="data[].rel3#role5_ent2#att9" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par550" name="Title_PASSING" source="data[].ent1#att2" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par551" name="Venue_PASSING" source="data[].ent1#att4" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#pwu15#ln153#par552" name="Year_PASSING" source="data[].ent1#att5" passing="true"/>
+      </Link>
+    </PowerIndexUnit>
+    <EntryUnit id="sv5#area10#page33#enu29" name="Search Publication" linkOrder="sv5#area10#page33#enu29#ln155 sv5#area10#page33#enu29#ln198" gr:x="305" gr:y="205" fieldOrder="sv5#area10#page33#enu29#fld95 sv5#area10#page33#enu29#fld96" entity="ent1">
+      <Field id="sv5#area10#page33#enu29#fld95" name="title" type="string" modifiable="true" attribute="ent1#att2" contentType="text/html"/>
+      <Field id="sv5#area10#page33#enu29#fld96" name="year" type="integer" modifiable="true" attribute="ent1#att5"/>
+      <Link id="sv5#area10#page33#enu29#ln155" name="Search" to="sv5#area10#page33#pwu15" type="normal" validate="true">
+        <LinkParameter id="sv5#area10#page33#enu29#ln155#par556" name="title_Title" source="sv5#area10#page33#enu29#fld95" target="sv5#area10#page33#pwu15#su62#acond29"/>
+        <LinkParameter id="sv5#area10#page33#enu29#ln155#par557" name="year_year" source="sv5#area10#page33#enu29#fld96" target="sv5#area10#page33#pwu15#su62#acond30"/>
+      </Link>
+      <Link id="sv5#area10#page33#enu29#ln198" name="show all" to="sv5#area10#page33#pwu15" type="normal" validate="true" gr:bendpoints="-144,9,146,19">
+        <LinkParameter id="sv5#area10#page33#enu29#ln198#par671" name="%_Title" target="sv5#area10#page33#pwu15#su62#acond29" blank="true"/>
+        <LinkParameter id="sv5#area10#page33#enu29#ln198#par672" name="%_year" target="sv5#area10#page33#pwu15#su62#acond30" blank="true"/>
+      </Link>
+    </EntryUnit>
+    <EntryUnit id="sv5#area10#page33#enu30" name="Publication Information" linkOrder="sv5#area10#page33#enu30#ln156 sv5#area10#page33#enu30#ln157 sv5#area10#page33#enu30#ln206" gr:x="260" gr:y="0" entity="ent1">
+      <Link id="sv5#area10#page33#enu30#ln156" name="Edit" to="sv5#area10#mfu13" type="normal" validate="true" ajaxEnabled="true">
+        <LinkParameter id="sv5#area10#page33#enu30#ln156#par558" name="Book Object" target="sv5#area10#mfu13.entityBeans" source="entityBean"/>
+        <LinkParameter id="sv5#area10#page33#enu30#ln156#par697" name="Key [oid]_Book [oid]" target="sv5#area10#mfu13#su60#kcond43.ent1#att1" source="key.ent1#att1"/>
+        <LinkParameter id="sv5#area10#page33#enu30#ln156#par1003" name="Keywords_PASSING" sourceLinkParameter="sv5#area10#page33#pwu15#ln151#par519" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#enu30#ln156#par1004" name="Publication Object_PASSING" source="entityBean" passing="true"/>
+      </Link>
+      <Link id="sv5#area10#page33#enu30#ln157" name="Cancel" to="sv5#area10#opu13" type="normal" validate="false"/>
+      <Link id="sv5#area10#page33#enu30#ln206" name="Add New" to="sv5#area10#cru15" type="normal" validate="true">
+        <LinkParameter id="sv5#area10#page33#enu30#ln206#par692" name="Publication Object_Publication Object" source="entityBean" target="sv5#area10#cru15.entityBeans"/>
+        <LinkParameter id="sv5#area10#page33#enu30#ln206#par693" name="Key [oid]_PASSING" source="key.ent1#att1" passing="true"/>
+        <LinkParameter id="sv5#area10#page33#enu30#ln206#par694" name="Publication Object_PASSING" source="entityBean" passing="true"/>
+      </Link>
+      <Field id="sv5#area10#page33#enu30#fld114" name="Title" type="string" modifiable="true" attribute="ent1#att2" contentType="text/html"/>
+      <Field id="sv5#area10#page33#enu30#fld115" name="Venue" type="string" modifiable="true" attribute="ent1#att4" contentType="text/html"/>
+      <Field id="sv5#area10#page33#enu30#fld116" name="Keywards" type="text" modifiable="true" attribute="ent1#att7" contentType="text/html"/>
+      <Field id="sv5#area10#page33#enu30#fld117" name="PDF" type="blob" modifiable="true" attribute="ent1#att8" contentType="application/pdf"/>
+      <Field id="sv5#area10#page33#enu30#fld118" name="Year" type="integer" modifiable="true" attribute="ent1#att5"/>
+      <Field id="sv5#area10#page33#enu30#fld119" name="Abstract" type="text" modifiable="true" attribute="ent1#att6" contentType="text/html"/>
+    </EntryUnit>
+    <MultiMessageUnit id="sv5#area10#page33#mssu14" name="Notifications" gr:x="55" gr:y="15"/>
+    <PowerIndexUnit gr:x="300" gr:y="105" id="sv5#area10#page33#pwu24" name="Related Comments" sortable="true" checkable="false" useCountQuery="false" entity="ent8" displayAttributes="ent8#att34 ent8#att35 ent8#att36" blockFactor="10" blockWindow="2" customDescriptor="false">
+      <Selector id="sv5#area10#page33#pwu24#su157" defaultPolicy="fill" booleanOperator="and"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area10#page33#mssu14"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="8">
+        <layout:Unit unitId="sv5#area10#page33#enu29">
+          <layout:Field field="sv5#area10#page33#enu29#fld95"/>
+          <layout:Field field="sv5#area10#page33#enu29#fld96"/>
+          <layout:Link link="sv5#area10#page33#enu29#ln155"/>
+          <layout:Link link="sv5#area10#page33#enu29#ln198"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell rowspan="2" colspan="4">
+        <layout:Unit unitId="sv5#area10#page33#enu30">
+          <layout:LayoutParameter name="mandatory-fields" value="true" type="unit"/>
+          <layout:Link link="sv5#area10#page33#enu30#ln156"/>
+          <layout:Link link="sv5#area10#page33#enu30#ln157"/>
+          <layout:Link link="sv5#area10#page33#enu30#ln206"/>
+          <layout:Field field="sv5#area10#page33#enu30#fld114"/>
+          <layout:Field field="sv5#area10#page33#enu30#fld115"/>
+          <layout:Field field="sv5#area10#page33#enu30#fld116"/>
+          <layout:Field field="sv5#area10#page33#enu30#fld117"/>
+          <layout:Field field="sv5#area10#page33#enu30#fld118"/>
+          <layout:Field field="sv5#area10#page33#enu30#fld119"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="8">
+        <layout:Unit unitId="sv5#area10#page33#pwu15">
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Attribute attribute="ent1#att2"/>
+          <layout:Attribute attribute="ent1#att4"/>
+          <layout:Attribute attribute="ent1#att5"/>
+          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Attribute attribute="ent1#att7"/>
+          <layout:Link link="sv5#area10#page33#pwu15#ln152"/>
+          <layout:Link link="sv5#area10#page33#pwu15#ln150"/>
+          <layout:Link link="sv5#area10#page33#pwu15#ln151"/>
+          <layout:Link link="sv5#area10#page33#pwu15#ln153"/>
+          <layout:Link link="sv5#area10#page33#pwu15ent1#att10"/>
+          <layout:Link link="sv5#area10#page33#pwu15ent1#att2"/>
+          <layout:Link link="sv5#area10#page33#pwu15ent1#att5"/>
+          <layout:Link link="sv5#area10#page33#pwu15ent1#att8"/>
+          <layout:Link link="sv5#area10#page33#pwu15First"/>
+          <layout:Link link="sv5#area10#page33#pwu15Previous"/>
+          <layout:Link link="sv5#area10#page33#pwu15Block"/>
+          <layout:Link link="sv5#area10#page33#pwu15Next"/>
+          <layout:Link link="sv5#area10#page33#pwu15Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell colspan="4"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area10#page33#pwu24">
+          <layout:Attribute attribute="ent8#att34"/>
+          <layout:Attribute attribute="ent8#att35"/>
+          <layout:Attribute attribute="ent8#att36"/>
+          <layout:Link link="sv5#area10#page33#pwu24First"/>
+          <layout:Link link="sv5#area10#page33#pwu24Previous"/>
+          <layout:Link link="sv5#area10#page33#pwu24Block"/>
+          <layout:Link link="sv5#area10#page33#pwu24Next"/>
+          <layout:Link link="sv5#area10#page33#pwu24Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Comment xml:space="preserve">Default Page for the Area.
+
+It allows the administrator to search Books and offers the possibility to quickly modify a Book.</Comment>
+</Page>

@@ -1,0 +1,169 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area7#page30" name="Researcher Management" landmark="false" gr:x="180" gr:y="45">
+  <ContentUnits>
+    <EntryUnit id="sv5#area7#page30#enu23" name="Search Researcher" gr:x="0" gr:y="125" entity="User" linkOrder="sv5#area7#page30#enu23#ln200">
+      <Field id="sv5#area7#page30#enu23#fld83" name="Name" type="string" modifiable="true" attribute="userName" contentType="text/html"/>
+      <Link id="sv5#area7#page30#enu23#ln200" name="search" to="sv5#area7#page30#pwu22" type="normal" validate="true" gr:bendpoints="107,12,-98,17">
+        <LinkParameter id="sv5#area7#page30#enu23#ln200#par677" name="Name_name" source="sv5#area7#page30#enu23#fld83" target="sv5#area7#page30#pwu22#su88#acond33"/>
+      </Link>
+    </EntryUnit>
+    <MultiMessageUnit id="sv5#area7#page30#mssu11" name="Notification" gr:x="25" gr:y="5"/>
+    <EntryUnit id="sv5#area7#page30#enu24" name="Researcher Information" linkOrder="sv5#area7#page30#enu24#ln138 sv5#area7#page30#enu24#ln139 sv5#area7#page30#enu24#ln203" gr:x="175" gr:y="0" entity="User">
+      <Field id="sv5#area7#page30#enu24#fld84" name="name" type="string" modifiable="true" attribute="userName" contentType="text/html"/>
+      <Field id="sv5#area7#page30#enu24#fld85" name="password" type="password" modifiable="true" attribute="password"/>
+      <Field id="sv5#area7#page30#enu24#fld86" name="email" type="string" modifiable="true" attribute="email" contentType="text/html"/>
+      <Link id="sv5#area7#page30#enu24#ln138" name="save change" to="sv5#area7#mfu10" type="normal" validate="true">
+        <LinkParameter id="sv5#area7#page30#enu24#ln138#par430" name="Key [oid]_KeyCondition35 [oid]" source="key.userOID" target="sv5#area7#mfu10#su51#kcond37.userOID"/>
+        <LinkParameter id="sv5#area7#page30#enu24#ln138#par432" name="User Object_User Object" source="entityBean" target="sv5#area7#mfu10.entityBeans"/>
+        <LinkParameter id="sv5#area7#page30#enu24#ln138#par435" name="Key [oid]_PASSING" source="key.userOID" passing="true"/>
+        <LinkParameter id="sv5#area7#page30#enu24#ln138#par438" name="User Object_PASSING" source="entityBean" passing="true"/>
+      </Link>
+      <Link id="sv5#area7#page30#enu24#ln139" name="cancel" to="sv5#area7#opu10" type="normal" validate="true">
+        <LinkParameter id="sv5#area7#page30#enu24#ln139#par439" name="email_PASSING" source="sv5#area7#page30#enu24#fld86" passing="true"/>
+        <LinkParameter id="sv5#area7#page30#enu24#ln139#par440" name="Key [oid]_PASSING" source="key.userOID" passing="true"/>
+        <LinkParameter id="sv5#area7#page30#enu24#ln139#par441" name="name_PASSING" source="sv5#area7#page30#enu24#fld84" passing="true"/>
+        <LinkParameter id="sv5#area7#page30#enu24#ln139#par442" name="password_PASSING" source="sv5#area7#page30#enu24#fld85" passing="true"/>
+        <LinkParameter id="sv5#area7#page30#enu24#ln139#par443" name="User Object_PASSING" source="entityBean" passing="true"/>
+      </Link>
+      <Link id="sv5#area7#page30#enu24#ln203" name="add new" to="sv5#area7#cru14" type="normal" validate="true">
+        <LinkParameter id="sv5#area7#page30#enu24#ln203#par686" name="Key [oid]_oid" source="key.userOID" target="sv5#area7#cru14.userOID"/>
+        <LinkParameter id="sv5#area7#page30#enu24#ln203#par687" name="User Object_User Object" source="entityBean" target="sv5#area7#cru14.entityBeans"/>
+        <LinkParameter id="sv5#area7#page30#enu24#ln203#par688" name="Key [oid]_PASSING" source="key.userOID" passing="true"/>
+        <LinkParameter id="sv5#area7#page30#enu24#ln203#par689" name="User Object_PASSING" source="entityBean" passing="true"/>
+      </Link>
+    </EntryUnit>
+    <PowerIndexUnit gr:x="215" gr:y="115" id="sv5#area7#page30#pwu22" name="Researcher List" sortable="true" checkable="false" useCountQuery="false" entity="User" displayAttributes="userName password email" linkOrder="sv5#area7#page30#pwu22#ln201 sv5#area7#page30#pwu22#ln202">
+      <Selector id="sv5#area7#page30#pwu22#su88" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv5#area7#page30#pwu22#su88#acond33" name="name" predicate="eq" booleanOperator="or" implied="false" attributes="userName"/>
+      </Selector>
+      <Link id="sv5#area7#page30#pwu22#ln201" name="delete" to="sv5#area7#dlu10" type="normal" validate="true">
+        <LinkParameter id="sv5#area7#page30#pwu22#ln201#par679" name="oid_KeyCondition23 [oid]" source="data[].userOID" target="sv5#area7#dlu10#su50#kcond36.userOID"/>
+        <LinkParameter id="sv5#area7#page30#pwu22#ln201#par680" name="oid_PASSING" source="data[].userOID" passing="true"/>
+      </Link>
+      <Link id="sv5#area7#page30#pwu22#ln202" name="edit" to="sv5#area7#page30#enu24" type="normal" validate="true">
+        <LinkParameter id="sv5#area7#page30#pwu22#ln202#par684" name="oid_Key Condition [oid]" source="data[].userOID" target="sv5#area7#page30#enu24.userOID"/>
+        <LinkParameter id="sv5#area7#page30#pwu22#ln202#par685" name="oid_PASSING" source="data[].userOID" passing="true"/>
+      </Link>
+    </PowerIndexUnit>
+    <PowerIndexUnit gr:x="220" gr:y="215" id="sv5#area7#page30#pwu37" name="All Researcher " sortable="true" checkable="false" useCountQuery="false" entity="User" displayAttributes="userName password email"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area7#page30#enu23">
+          <layout:Field field="sv5#area7#page30#enu23#fld83"/>
+          <layout:Link link="sv5#area7#page30#enu23#ln200"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area7#page30#mssu11"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area7#page30#enu24">
+          <layout:Field field="sv5#area7#page30#enu24#fld84"/>
+          <layout:Field field="sv5#area7#page30#enu24#fld85"/>
+          <layout:Field field="sv5#area7#page30#enu24#fld86"/>
+          <layout:Link link="sv5#area7#page30#enu24#ln138"/>
+          <layout:Link link="sv5#area7#page30#enu24#ln139"/>
+          <layout:Link link="sv5#area7#page30#enu24#ln203"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area7#page30#pwu22">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Link link="sv5#area7#page30#pwu22#ln201"/>
+          <layout:Link link="sv5#area7#page30#pwu22#ln202"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area7#page30#pwu37">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+          <layout:Attribute attribute="email"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <ConditionExpression id="sv5#area7#page30#cexpr18" name="seeedit">
+    <TextValue xml:space="preserve">showedit == "true"</TextValue>
+  </ConditionExpression>
+  <Variable id="sv5#area7#page30#var9" name="showedit" value="true"/>
+</Page>

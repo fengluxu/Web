@@ -1,0 +1,49 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area10" name="Publication Search" defaultPage="sv5#area10#page33" landmark="true" gr:x="395" gr:y="275">
+  <OperationUnits>
+    <ModuleInstanceUnit id="sv5#area10#miu26" name="Edit Comments" gr:x="0" gr:y="150" moduleId="mov3#mpkg1#hym11">
+      <OKLink id="sv5#area10#miu26#oln95" name="OKLink30" to="sv5#area10#page33#mssu14" gr:bendpoints="-1,-79,-236,-79">
+        <LinkParameter id="sv5#area10#miu26#oln95#par505" name="Message" target="sv5#area10#page33#mssu14.shownMessages" sourceValue="Comment was saved successfully"/>
+      </OKLink>
+      <KOLink id="sv5#area10#miu26#kln30" name="KOLink20" to="sv5#area10#page33#mssu14">
+        <LinkParameter id="sv5#area10#miu26#kln30#par506" name="Message" target="sv5#area10#page33#mssu14.shownMessages" sourceValue="There was an error in the Operation."/>
+      </KOLink>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit id="sv5#area10#miu27" name="Save Comments" gr:x="370" gr:y="540" moduleId="mov3#mpkg1#hym1">
+      <OKLink id="sv5#area10#miu27#oln96" name="OKLink78" to="sv5#area10#page33#mssu14" gr:bendpoints="123,-82,128,303;123,-285,128,100">
+        <LinkParameter id="sv5#area10#miu27#oln96#par507" name="Message" target="sv5#area10#page33#mssu14.shownMessages" sourceValue="Comment Saved successfully"/>
+      </OKLink>
+      <KOLink id="sv5#area10#miu27#kln31" name="KOLink26" to="sv5#area10#page33#mssu14" gr:bendpoints="148,-62,153,323;148,-303,153,82">
+        <LinkParameter id="sv5#area10#miu27#kln31#par508" name="Message" target="sv5#area10#page33#mssu14.shownMessages" sourceValue="There was an error saving the comment"/>
+      </KOLink>
+    </ModuleInstanceUnit>
+    <ModifyUnit id="sv5#area10#mfu13" name="Modify publications" gr:x="315" gr:y="0" entity="ent1">
+      <Selector id="sv5#area10#mfu13#su60" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area10#mfu13#su60#kcond43" name="Publication" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv5#area10#mfu13#oln97" name="OKLink286" to="sv5#area10#page33#mssu14">
+        <LinkParameter id="sv5#area10#mfu13#oln97#par509" name="Show Edit" targetVariable="sv5#area10#page33#var4" sourceValue="false"/>
+        <LinkParameter id="sv5#area10#mfu13#oln97#par510" name="Message" target="sv5#area10#page33#mssu14.shownMessages" sourceValue="Edit Success"/>
+      </OKLink>
+    </ModifyUnit>
+    <NoOpOperationUnit id="sv5#area10#opu13" name="Cancel Operations" gr:x="540" gr:y="15">
+      <OKLink id="sv5#area10#opu13#oln98" name="OKLink59" to="sv5#area10#page33">
+        <LinkParameter id="sv5#area10#opu13#oln98#par511" name="Show Edit" targetVariable="sv5#area10#page33#var4" sourceValue="false"/>
+      </OKLink>
+    </NoOpOperationUnit>
+    <DeleteUnit id="sv5#area10#dlu13" name="Delete Publication" gr:x="55" gr:y="350" entity="ent1">
+      <Selector id="sv5#area10#dlu13#su61" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area10#dlu13#su61#kcond44" name="Publication" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv5#area10#dlu13#oln99" name="OKLink7" to="sv5#area10#page33#mssu14">
+        <LinkParameter id="sv5#area10#dlu13#oln99#par512" name="Show Edit" targetVariable="sv5#area10#page33#var4" sourceValue="false"/>
+        <LinkParameter id="sv5#area10#dlu13#oln99#par513" name="Message" target="sv5#area10#page33#mssu14.shownMessages" sourceValue="Publicaton Deleted Successfully"/>
+      </OKLink>
+    </DeleteUnit>
+    <CreateUnit gr:x="735" gr:y="5" id="sv5#area10#cru15" name="Add Publications" entity="ent1">
+      <OKLink id="sv5#area10#cru15#oln149" name="OKFlow149" to="sv5#area10#page33#mssu14">
+        <LinkParameter id="sv5#area10#cru15#oln149#par691" name="Add Sucess_Shown Messages" sourceValue="Add Sucess" target="sv5#area10#page33#mssu14.shownMessages"/>
+      </OKLink>
+    </CreateUnit>
+  </OperationUnits>
+  <Comment xml:space="preserve">Area that allows the administrator to quickly manage Books.</Comment>
+</Area>

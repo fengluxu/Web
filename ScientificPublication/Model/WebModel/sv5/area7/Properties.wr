@@ -1,0 +1,28 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area7" name="Researcher search" defaultPage="sv5#area7#page30" landmark="true" gr:x="465" gr:y="-170">
+  <OperationUnits>
+    <DeleteUnit id="sv5#area7#dlu10" name="Delete Researcher" gr:x="0" gr:y="85" entity="User">
+      <Selector id="sv5#area7#dlu10#su50" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area7#dlu10#su50#kcond36" name="KeyCondition23" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv5#area7#dlu10#oln86" name="OKFlow67" to="sv5#area7#page30#mssu11">
+        <LinkParameter id="sv5#area7#dlu10#oln86#par420" name="Researcher Deleted Successfully_Shown Messages" target="sv5#area7#page30#mssu11.shownMessages" sourceValue="Researcher Deleted Successfully"/>
+      </OKLink>
+    </DeleteUnit>
+    <ModifyUnit id="sv5#area7#mfu10" name="Modify Researcher" gr:x="635" gr:y="0" entity="User">
+      <Selector id="sv5#area7#mfu10#su51" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area7#mfu10#su51#kcond37" name="KeyCondition35" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv5#area7#mfu10#oln87" name="user" to="sv5#area7#page30#mssu11" gr:bendpoints="-230,-74,210,-84">
+        <LinkParameter id="sv5#area7#mfu10#oln87#par421" name="Publicaton Deleted Successfully_Shown Messages" target="sv5#area7#page30#mssu11.shownMessages" sourceValue="Edit Success"/>
+      </OKLink>
+    </ModifyUnit>
+    <NoOpOperationUnit id="sv5#area7#opu10" name="Cancel Operations" gr:x="625" gr:y="240">
+      <OKLink id="sv5#area7#opu10#oln88" name="OKFlow85" to="sv5#area7#page30" automaticCoupling="true"/>
+    </NoOpOperationUnit>
+    <CreateUnit gr:x="635" gr:y="115" id="sv5#area7#cru14" name="Add New Researcher" entity="User">
+      <OKLink id="sv5#area7#cru14#oln148" name="OKFlow148" to="sv5#area7#page30#mssu11" gr:bendpoints="-134,-125,301,-85">
+        <LinkParameter id="sv5#area7#cru14#oln148#par690" name="Add Success_Shown Messages" sourceValue="Add Success" target="sv5#area7#page30#mssu11.shownMessages"/>
+      </OKLink>
+    </CreateUnit>
+  </OperationUnits>
+</Area>

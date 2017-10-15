@@ -1,0 +1,3 @@
+<ModulePackage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov3#mpkg8" name="Pubilication Operation" gr:x="285" gr:y="135">
+  <Comment xml:space="preserve">Module Package that contains all the operations and the logic related to the management of Appointments.</Comment>
+</ModulePackage>

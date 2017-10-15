@@ -1,0 +1,5 @@
+<ModulePackage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov3#mpkg1" name="Manage Comment" gr:x="225" gr:y="-5">
+  <Comment xml:space="preserve">Package that collects all the Modules directly related to the entity Book.
+
+The CRU operations are defined inside its Modules.</Comment>
+</ModulePackage>

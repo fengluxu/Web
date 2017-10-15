@@ -1,0 +1,51 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov2#opm1" name="CreateUser" gr:x="200" gr:y="110">
+  <OperationUnits>
+    <InputCollectorUnit id="mov2#opm1#icu3" gr:x="45" gr:y="25">
+      <OKLink id="mov2#opm1#icu3#oln5" name="OKFlow11" to="mov2#opm1#cru1">
+        <LinkParameter id="mov2#opm1#icu3#oln5#par17" name="Group.oid(defaultGroup)" source="mov2#opm1#icu3#icp5" target="mov2#opm1#cru1.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par18" name="Group.oid(groups)" source="mov2#opm1#icu3#icp6" target="mov2#opm1#cru1.User2Group.groupOID"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par21" name="User Object" source="mov2#opm1#icu3#icp9" target="mov2#opm1#cru1.entityBeans"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par26" name="email" source="mov2#opm1#icu3#icp11" target="mov2#opm1#cru1.email"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par52" name="email" source="mov2#opm1#icu3#icp29" target="mov2#opm1#cru1.email"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par54" name="password" source="mov2#opm1#icu3#icp31" target="mov2#opm1#cru1.password"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par55" name="userName" source="mov2#opm1#icu3#icp32" target="mov2#opm1#cru1.userName"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par69" name="Author.oid(UserToAuthor)" source="mov2#opm1#icu3#icp4" target="mov2#opm1#cru1.rel1#role1.ent2#att9"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par70" name="Collection.oid(UserToCollection)" source="mov2#opm1#icu3#icp5" target="mov2#opm1#cru1.rel6#role11.ent5#att18"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par71" name="Collection.oid(UserToCollection_2)" source="mov2#opm1#icu3#icp6" target="mov2#opm1#cru1.rel7#role13.ent5#att18"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par72" name="Comment.oid(UserToComment)" source="mov2#opm1#icu3#icp7" target="mov2#opm1#cru1.rel8#role15.ent8#att33"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par73" name="Group.oid(defaultGroup)" source="mov2#opm1#icu3#icp8" target="mov2#opm1#cru1.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par74" name="Group.oid(groups)" source="mov2#opm1#icu3#icp9" target="mov2#opm1#cru1.User2Group.groupOID"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par75" name="User Object" source="mov2#opm1#icu3#icp10" target="mov2#opm1#cru1.entityBeans"/>
+        <LinkParameter id="mov2#opm1#icu3#oln5#par76" name="oid" source="mov2#opm1#icu3#icp11" target="mov2#opm1#cru1.userOID"/>
+      </OKLink>
+      <InputCollectorParameter id="mov2#opm1#icu3#icp29" name="email"/>
+      <InputCollectorParameter id="mov2#opm1#icu3#icp31" name="password"/>
+      <InputCollectorParameter id="mov2#opm1#icu3#icp32" name="userName"/>
+      <InputCollectorParameter id="mov2#opm1#icu3#icp4" name="Author.oid(UserToAuthor)"/>
+      <InputCollectorParameter id="mov2#opm1#icu3#icp5" name="Collection.oid(UserToCollection)"/>
+      <InputCollectorParameter id="mov2#opm1#icu3#icp6" name="Collection.oid(UserToCollection_2)"/>
+      <InputCollectorParameter id="mov2#opm1#icu3#icp7" name="Comment.oid(UserToComment)"/>
+      <InputCollectorParameter id="mov2#opm1#icu3#icp8" name="Group.oid(defaultGroup)"/>
+      <InputCollectorParameter id="mov2#opm1#icu3#icp9" name="Group.oid(groups)"/>
+      <InputCollectorParameter id="mov2#opm1#icu3#icp10" name="User Object"/>
+      <InputCollectorParameter id="mov2#opm1#icu3#icp11" name="oid"/>
+    </InputCollectorUnit>
+    <CreateUnit id="mov2#opm1#cru1" name="CreateUser" gr:x="505" gr:y="145" entity="User">
+      <OKLink id="mov2#opm1#cru1#oln6" name="OKFlow12" to="mov2#opm1#okcu2">
+        <LinkParameter id="mov2#opm1#cru1#oln6#par33" name="oid_oid" source="userOIDArray" target="mov2#opm1#okcu2#ocp2"/>
+        <LinkParameter id="mov2#opm1#cru1#oln6#par56" name="email" source="emailArray" target="mov2#opm1#okcu2#ocp10"/>
+        <LinkParameter id="mov2#opm1#cru1#oln6#par58" name="password" source="passwordArray" target="mov2#opm1#okcu2#ocp12"/>
+        <LinkParameter id="mov2#opm1#cru1#oln6#par59" name="userName" source="userNameArray" target="mov2#opm1#okcu2#ocp13"/>
+        <LinkParameter id="mov2#opm1#cru1#oln6#par77" name="oid" source="userOIDArray" target="mov2#opm1#okcu2#ocp2"/>
+      </OKLink>
+      <KOLink id="mov2#opm1#cru1#kln5" name="KOFlow10" to="mov2#opm1#kocu3" automaticCoupling="true"/>
+    </CreateUnit>
+    <OKCollectorUnit id="mov2#opm1#okcu2" name="OK Port1" gr:x="655" gr:y="25">
+      <OutputCollectorParameter id="mov2#opm1#okcu2#ocp10" name="email"/>
+      <OutputCollectorParameter id="mov2#opm1#okcu2#ocp12" name="password"/>
+      <OutputCollectorParameter id="mov2#opm1#okcu2#ocp13" name="userName"/>
+      <OutputCollectorParameter id="mov2#opm1#okcu2#ocp2" name="oid"/>
+    </OKCollectorUnit>
+    <KOCollectorUnit id="mov2#opm1#kocu3" name="KO Port4" gr:x="655" gr:y="225"/>
+  </OperationUnits>
+</OperationModule>

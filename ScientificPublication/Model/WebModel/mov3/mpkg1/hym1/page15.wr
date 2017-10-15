@@ -1,0 +1,43 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="mov3#mpkg1#hym1#page15" name="Comment" layout:pageLayout="WRDefault/Empty" gr:x="145" gr:y="10">
+  <ContentUnits>
+    <EntryUnit id="mov3#mpkg1#hym1#page15#enu10" name="Comment Information" linkOrder="mov3#mpkg1#hym1#page15#enu10#ln40" gr:x="0" gr:y="0" fieldOrder="mov3#mpkg1#hym1#page15#enu10#fld46 mov3#mpkg1#hym1#page15#enu10#fld76 mov3#mpkg1#hym1#page15#enu10#fld77" entity="ent8">
+      <Field id="mov3#mpkg1#hym1#page15#enu10#fld46" name="title" type="string" modifiable="true" preloaded="false" attribute="ent8#att34"/>
+      <Link id="mov3#mpkg1#hym1#page15#enu10#ln40" name="Save" to="mov3#mpkg1#hym1#opg1#tmu1" type="normal" validate="true" ajaxEnabled="true"/>
+      <Link id="mov3#mpkg1#hym1#page15#enu10#ln41" name="Link88" to="mov3#mpkg1#hym1#opg1#cru2" type="transport" validate="true">
+        <LinkParameter id="mov3#mpkg1#hym1#page15#enu10#ln41#par99" name="Editorial Review Object" source="entityBean" target="mov3#mpkg1#hym1#opg1#cru2.entityBeans"/>
+        <LinkParameter id="mov3#mpkg1#hym1#page15#enu10#ln41#par272" name="Key [oid]_oid" source="key.ent8#att33" target="mov3#mpkg1#hym1#opg1#cru2.ent8#att33"/>
+        <LinkParameter id="mov3#mpkg1#hym1#page15#enu10#ln41#par273" name="text_Textual" source="mov3#mpkg1#hym1#page15#enu10#fld77" target="mov3#mpkg1#hym1#opg1#cru2.ent8#att36"/>
+        <LinkParameter id="mov3#mpkg1#hym1#page15#enu10#ln41#par275" name="title_Title" source="mov3#mpkg1#hym1#page15#enu10#fld46" target="mov3#mpkg1#hym1#opg1#cru2.ent8#att34"/>
+        <LinkParameter id="mov3#mpkg1#hym1#page15#enu10#ln41#par276" name="Comment Object_PASSING" source="entityBean" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym1#page15#enu10#ln41#par277" name="Key [oid]_PASSING" source="key.ent8#att33" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#hym1#page15#enu10#ln41#par829" name="Key [oid]_Publication.oid(CommentToPublication)" target="mov3#mpkg1#hym1#opg1#cru2.rel9#role17.ent1#att1" sourceLinkParameter="mov3#mpkg1#hym1#icu4#oln22#par831"/>
+        <LinkParameter id="mov3#mpkg1#hym1#page15#enu10#ln41#par926" name="Publication Key_PASSING" sourceLinkParameter="mov3#mpkg1#hym1#icu4#oln22#par831" passing="true"/>
+      </Link>
+      <Field id="mov3#mpkg1#hym1#page15#enu10#fld76" name="time" type="timestamp" modifiable="true" attribute="ent8#att35"/>
+      <Field id="mov3#mpkg1#hym1#page15#enu10#fld77" type="text" modifiable="true" name="text" attribute="ent8#att36"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov3#mpkg1#hym1#page15#enu10">
+          <layout:Link link="mov3#mpkg1#hym1#page15#enu10#ln40"/>
+          <layout:Field field="mov3#mpkg1#hym1#page15#enu10#fld46"/>
+          <layout:Field field="mov3#mpkg1#hym1#page15#enu10#fld76"/>
+          <layout:Field field="mov3#mpkg1#hym1#page15#enu10#fld77"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
